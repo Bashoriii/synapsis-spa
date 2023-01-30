@@ -1,0 +1,54 @@
+// Nav Bar Start
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 1rem auto;
+  font-family: 'Poppins', sans-serif;
+
+  .logo {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 7px;
+    color: #222222;
+  }
+}
+
+.nav-list {
+  & a {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--color);
+  }
+
+  & a:nth-child(2) {
+    margin: 0 3rem;
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-user {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: var(--color);
+}
+
+.login {
+  margin-left: 6rem;
+  & a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    color: var(--color);
+  }
+}
+// Nav Bar End

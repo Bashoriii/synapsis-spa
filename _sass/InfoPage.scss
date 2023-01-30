@@ -1,0 +1,60 @@
+// Info Start
+.container-info {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 600px;
+  margin: 2rem auto;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: var(--color);
+
+    & h1 {
+      font-size: 2.5rem;
+    }
+
+    & p {
+      font-size: 1.3rem;
+      font-family: 'Raleway', sans-serif;
+    }
+  }
+
+  .btn-about {
+    margin-top: 2rem;
+  }
+
+  .btn {
+    width: 220px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 13px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn-color {
+    background-color: #242529;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  .side {
+    width: 50%;
+  }
+
+  & img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    // clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(11% 0, 94% 0, 100% 100%, 0% 100%);
+  }
+}
+// Info End
