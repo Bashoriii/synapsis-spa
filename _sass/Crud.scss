@@ -1,0 +1,181 @@
+.table-container {
+  width: 100%;
+}
+
+.table-text {
+  width: 80%;
+  margin: 2rem auto;
+
+  h2 {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+.table {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.table-data {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  border-radius: var(--border) var(--border) 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px #00000026;
+
+  thead tr {
+    background-color: var(--color);
+    color: var(--white);
+  }
+
+  th,
+  td {
+    padding: 1.3rem 1rem;
+    text-align: left;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  tbody tr:last-of-type {
+    border-bottom: 2px solid var(--color);
+  }
+}
+
+// Comments
+.comment-container {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.comment-text {
+  width: 80%;
+  margin: auto;
+  h2 {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+.comment-search {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: right;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 35px;
+  width: 15rem;
+}
+
+.input {
+  border: none;
+  outline: none;
+  margin-left: 0.7rem;
+  background-color: #f3f3f3;
+}
+
+.icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.comments {
+  width: 80%;
+  margin: 3rem auto;
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+  display: flex;
+  img {
+    width: 16%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.comment-user {
+  margin: 1rem;
+  padding-left: 2rem;
+
+  h3,
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.ids {
+  margin-top: 2rem;
+  display: flex;
+
+  p {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .table {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-text {
+    text-align: center;
+  }
+
+  .comment-text {
+    text-align: center;
+  }
+
+  .comment-search {
+    justify-content: center;
+  }
+
+  .comments {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  .comment-user {
+    padding: 0 1rem;
+
+    h3,
+    h2 {
+      font-size: 3vw;
+    }
+  }
+
+  .ids {
+    justify-content: space-evenly;
+  }
+}

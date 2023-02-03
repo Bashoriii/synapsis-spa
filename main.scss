@@ -2,8 +2,17 @@
 @import './_sass/NavBar.scss';
 @import './_sass/InfoPage.scss';
 @import './_sass/BlogPost.scss';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;900&family=Raleway:wght@200;400;600&display=swap');
+@import './_sass/NewsLetter.scss';
+@import './_sass/Footer.scss';
+@import './assets/icon.css';
+@import './_sass/About.scss';
+@import './_sass/BlogDetail.scss';
+@import './_sass/Crud.scss';
+@import './_sass/PostList.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;900&family=Raleway:wght@200;400;600&family=Staatliches&display=swap');
 
 :root {
-  --color: #2b2b2b;
+  --color: #363636;
+  --white: #fdfdfd;
+  --border: 10px;
 }

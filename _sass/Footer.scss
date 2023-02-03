@@ -1,0 +1,151 @@
+.footer {
+  width: 100%;
+  margin-top: 2rem;
+  color: var(--white);
+  background-color: #494949;
+
+  & a {
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  & p {
+    height: 2px;
+    font-size: 1.1rem;
+  }
+}
+
+.social-info {
+  width: 80%;
+  margin: auto;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+
+  h2,
+  span {
+    font-size: 1.8rem;
+  }
+}
+
+.icon-twitter,
+.icon-instagram {
+  cursor: pointer;
+  margin-right: 5rem;
+}
+.icon-facebook {
+  cursor: pointer;
+}
+
+.info {
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    margin-top: 0.7rem;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--white);
+  }
+}
+
+.explore-info,
+.event-info {
+  margin: 1rem 0;
+
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.2rem;
+}
+
+.copyright {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+// OPSI KEDUA
+@media (max-width: 576px) {
+  .socials {
+    h2,
+    span {
+      font-size: 1.5rem;
+    }
+  }
+
+  .icon-twitter,
+  .icon-instagram {
+    cursor: pointer;
+    margin-right: 2.5rem;
+  }
+
+  .info {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .list {
+    margin-top: 1.2rem;
+  }
+
+  .explore-info {
+    margin: 2rem 0;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+// OPSI PERTAMA
+@media (min-width: 577px) and (max-width: 768px) {
+  .socials {
+    h2,
+    span {
+      font-size: 1.7rem;
+    }
+  }
+
+  .info {
+    h3 {
+      font-size: 1.2rem;
+    }
+    p,
+    a {
+      font-size: 1rem;
+    }
+  }
+
+  .logo {
+    h3 {
+      font-size: 2.3rem;
+    }
+  }
+
+  .copyright {
+    p {
+      font-size: 1rem;
+    }
+  }
+}

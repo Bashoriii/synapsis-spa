@@ -1,12 +1,10 @@
 <template>
-  <div class="space layer-1">
-    <div class="event-text">
-      <h2>Related Event</h2>
-      <p>Catch up the upcoming music festival</p>
-    </div>
+  <div class="event-text">
+    <h2>Related Event</h2>
+    <p>Catch up the upcoming music festival</p>
   </div>
   <div class="container-event">
-    <div class="event">
+    <div class="event-card">
       <div class="event-img">
         <img src="../assets/dwp.png" />
       </div>
@@ -18,15 +16,13 @@
         </p>
       </div>
       <div class="booknow">
-        <a href="#" class="button"> Book Now </a>
-        <a href="#" class="button">
-          <svg class="icon icon-arrow">
-            <use xlink:href="../assets/arrow.svg#icon-circle-right"></use>
-          </svg>
-        </a>
+        <NuxtLink to="/blog-detail">Book Now</NuxtLink>
+        <NuxtLink to="/blog-detail">
+          <span class="icon-circle-right"></span>
+        </NuxtLink>
       </div>
     </div>
-    <div class="event">
+    <div class="event-card">
       <div class="event-img">
         <img src="../assets/javajazz.png" />
       </div>
@@ -38,15 +34,13 @@
         </p>
       </div>
       <div class="booknow">
-        <a href="#" class="button"> Book Now </a>
-        <a href="#" class="button">
-          <svg class="icon icon-arrow">
-            <use xlink:href="../assets/arrow.svg#icon-circle-right"></use>
-          </svg>
-        </a>
+        <NuxtLink to="/blog-detail">Book Now</NuxtLink>
+        <NuxtLink to="/blog-detail">
+          <span class="icon-circle-right"></span>
+        </NuxtLink>
       </div>
     </div>
-    <div class="event">
+    <div class="event-card">
       <div class="event-img">
         <img src="../assets/headincloud.png" />
       </div>
@@ -58,15 +52,13 @@
         </p>
       </div>
       <div class="booknow">
-        <a href="#" class="button"> Book Now </a>
-        <a href="#" class="button">
-          <svg class="icon icon-arrow">
-            <use xlink:href="../assets/arrow.svg#icon-circle-right"></use>
-          </svg>
-        </a>
+        <NuxtLink to="/blog-detail">Book Now</NuxtLink>
+        <NuxtLink to="/blog-detail">
+          <span class="icon-circle-right"></span>
+        </NuxtLink>
       </div>
     </div>
-    <div class="event">
+    <div class="event-card">
       <div class="event-img">
         <img src="../assets/dwp.png" />
       </div>
@@ -78,15 +70,13 @@
         </p>
       </div>
       <div class="booknow">
-        <a href="#" class="button"> Book Now </a>
-        <a href="#" class="button">
-          <svg class="icon icon-arrow">
-            <use xlink:href="../assets/arrow.svg#icon-circle-right"></use>
-          </svg>
-        </a>
+        <NuxtLink to="/blog-detail">Book Now</NuxtLink>
+        <NuxtLink to="/blog-detail">
+          <span class="icon-circle-right"></span>
+        </NuxtLink>
       </div>
     </div>
-    <div class="event">
+    <div class="event-card">
       <div class="event-img">
         <img src="../assets/javajazz.png" />
       </div>
@@ -98,15 +88,13 @@
         </p>
       </div>
       <div class="booknow">
-        <a href="#" class="button"> Book Now </a>
-        <a href="#" class="button">
-          <svg class="icon icon-arrow">
-            <use xlink:href="../assets/arrow.svg#icon-circle-right"></use>
-          </svg>
-        </a>
+        <NuxtLink to="/blog-detail">Book Now</NuxtLink>
+        <NuxtLink to="/blog-detail">
+          <span class="icon-circle-right"></span>
+        </NuxtLink>
       </div>
     </div>
-    <div class="event">
+    <div class="event-card">
       <div class="event-img">
         <img src="../assets/headincloud.png" />
       </div>
@@ -118,13 +106,35 @@
         </p>
       </div>
       <div class="booknow">
-        <a href="#" class="button"> Book Now </a>
-        <a href="#" class="button">
-          <svg class="icon icon-arrow">
-            <use xlink:href="../assets/arrow.svg#icon-circle-right"></use>
-          </svg>
-        </a>
+        <NuxtLink to="/blog-detail">Book Now</NuxtLink>
+        <NuxtLink to="/blog-detail">
+          <span class="icon-circle-right"></span>
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
+
+<!-- --------------------------------------------------------------- -->
+
+<!-- LOOPING TITLE FOR POST LIST -->
+<!-- <div class="event-card" v-for="blog in bloglist">
+      <div class="event-img">
+        <img src="../assets/javajazz.png" />
+      </div>
+      <div class="title-text">
+        <NuxtLink to="#">{{ blog.title }}</NuxtLink>
+      </div>
+      <div class="booknow">
+        <NuxtLink to="/blog-detail">Book Now</NuxtLink>
+        <NuxtLink to="/blog-detail">
+          <span class="icon-circle-right"></span>
+        </NuxtLink>
+      </div>
+    </div>
+  </div>
+<script setup>
+const { data: bloglist } = await useFetch(
+  'https://gorest.co.in/public/v2/posts'
+);
+</script> -->

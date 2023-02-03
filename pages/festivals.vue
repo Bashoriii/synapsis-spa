@@ -1,0 +1,4 @@
+<template>
+  <BlogPost />
+  <NewsLetter />
+</template>

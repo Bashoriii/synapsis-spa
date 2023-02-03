@@ -1,33 +1,22 @@
-// Blog Post 2 Start
-.spacer {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-// .layer-1 {
-//   background-image: url(./assets/wave-1.svg);
-// }
-
 .event-text {
   width: 100%;
   height: 220px;
-  margin-top: 2rem;
+  // margin-top: 2rem;
   background-color: #f2f3f5;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 70%);
 
   h2 {
-    width: 90%;
+    width: 80%;
     margin: auto;
     font-size: 1.9rem;
     font-weight: 600;
     padding-top: 2.5rem;
     font-family: 'Raleway', sans-serif;
   }
+
   p {
+    width: 80%;
     font-size: 1.1rem;
-    width: 90%;
     margin: 1rem auto;
     font-family: 'Raleway', sans-serif;
   }
@@ -48,12 +37,12 @@
   height: 300px;
 }
 
-.event {
+.event-card {
   position: relative;
   margin: 24px;
   width: 320px;
   height: 570px;
-  border-radius: 20px;
+  border-radius: var(--border);
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
@@ -94,4 +83,19 @@
     height: 80px;
   }
 }
-// Blog Post 2 End
+
+@media (max-width: 768px) {
+  .event-text {
+    h2,
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1402px) and (max-width: 2000px) {
+  .container-event {
+    margin: auto;
+    max-width: 80vw;
+  }
+}
